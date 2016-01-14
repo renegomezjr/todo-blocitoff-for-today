@@ -1,2 +1,9 @@
-<h2>Item</h2>
-<%=
+<%= form_for([@user, @user.items.build]) do |f| %>
+<p>
+  <%= f.label :name %><br>
+  <%= f.text_area :name %>
+</p>
+<p>
+  <%= f.submit "Add it" %>
+</p>
+<% end %>
