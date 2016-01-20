@@ -13,9 +13,12 @@
     password: "password")
 end
 
+# users = User.all
+
+
 50.times do |n|
   Item.create!(
-    user_id: Faker::Number.between(1,20),
+    user_id: Faker::Number.between(1,20), # user: users.sample,
     name: Faker::Lorem.sentence)
 end
 
