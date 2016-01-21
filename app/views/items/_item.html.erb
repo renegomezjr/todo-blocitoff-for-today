@@ -1,4 +1,5 @@
-<h4 id="item-<%= item.id %>">
+<h3 id="item-<%= item.id %>">
   <%= item.name %>
+  <small><%= distance_of_time_in_words(item.created_at, Time.now) %> ago</small>
   <%= link_to " ", [item.user, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
-</h4>
+</h3>
