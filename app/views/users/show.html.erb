@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <h5><%= @user.name %></h5>
-      <p><%= @user.email %></p>
-      <h2>To-Do items</h2>
+    <h4><%= @user.name %>,</h4>
+    <h5>Here is your To-Do list:</h5>
+    <div class="jumbotron">
       <%= render @user.items %>
     </div>
-
-    <div class="col-md-6">
-      <h2>Create new To-Do item</h2>
-      <%= render 'items/form' %>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Create new To-Do item</h4>
+        <%= render 'items/form' %>
+      </div>
     </div>
   </div>
 </div>
