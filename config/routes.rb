@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     root to: 'users#show', as: :authenticated_root
   end
   unauthenticated do
-    root 'welcome#index', as: :unauthenticated_root
+    root to: 'welcome#index', as: :unauthenticated_root
   end
 
   # Example of regular route:
