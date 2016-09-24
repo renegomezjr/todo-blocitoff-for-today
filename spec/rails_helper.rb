@@ -7,6 +7,11 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'devise'
 
+RSpec.configure do |config|
+  config.include Devise::TestHelpers, :type => :controller
+  config.extend ControllerMacros, :type => :controller
+end
+
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

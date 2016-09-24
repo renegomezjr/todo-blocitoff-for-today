@@ -18,9 +18,9 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-set :environment, "development"
-set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
-
-every 1.day, :at => '4:08 pm' do
-  rake "todo:delete_items"
-end
+# set :environment, "development"
+# set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
+#
+# every 1.day, :at => '4:08 pm' do
+#   rake "todo:delete_items"
+# end
